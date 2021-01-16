@@ -3,6 +3,12 @@ import sys
 sys.path.append("../../")
 from lib.speech.speaker import Speaker
 
-mine = Speaker("en", "oof.mp3")
+foo = Speaker(language="en")
 
-# to be continued
+foo.speak("this is a sentence")
+
+foo.speak( "this is the continuation of a sentence")
+
+foo.speak(" dsdsfsfsdfs")
+
+foo.save("audio.mp3")
