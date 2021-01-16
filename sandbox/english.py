@@ -1,5 +1,7 @@
 import numpy as np
 
+##numbers are A to J
+
 class Letter:
     def __init__(self,matrixRep,english):
         self.matrixRep = matrixRep
