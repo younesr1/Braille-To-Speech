@@ -1,7 +1,7 @@
 # HTN
 
 ## Requirements
-- Install the following packages using pip3 install: gTTS, pyttsx3, playsound
+- Install the following packages using pip3 install: gTTS
 
 ## Contribution Practices
 - Before making any changes, create a branch off main
