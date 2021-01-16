@@ -24,7 +24,8 @@ def main(argv):
     rows = gray.shape[0]
     # circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1, rows/16)
     circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1,
-                              1, param1=100, param2=15, minRadius=0, maxRadius=10)
+                              #1, param1=100, param2=15, minRadius=gray.shape[0]//20, maxRadius=gray.shape[0]//5)
+                              1, param1=100, param2=12, minRadius=3, maxRadius=10)
 
     output = np.array([[0, 0],
                        [0, 0],
