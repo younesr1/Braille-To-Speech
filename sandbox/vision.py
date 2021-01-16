@@ -19,13 +19,11 @@ def main(argv):
 
     gray = cv.cvtColor(src, cv.COLOR_BGR2GRAY)
 
-    # gray = cv.medianBlur(gray, 5)
+    #gray = cv.medianBlur(gray, 5)
 
-    rows = gray.shape[0]
-    # circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1, rows/16)
+    #rows = gray.shape[0]
     circles = cv.HoughCircles(gray, cv.HOUGH_GRADIENT, 1,
-                              #1, param1=100, param2=15, minRadius=gray.shape[0]//20, maxRadius=gray.shape[0]//5)
-                              1, param1=100, param2=12, minRadius=3, maxRadius=10)
+                              1, param1=100, param2=12, minRadius=gray.shape[0]//50, maxRadius=gray.shape[0]//5)
 
     output = np.array([[0, 0],
                        [0, 0],
