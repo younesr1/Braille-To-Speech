@@ -9,6 +9,3 @@
 - Create a folder for your library under lib
 - Experiment inside sandbox folder
 - main.py will hold presentation code
-
-
-dsfsdfsdf

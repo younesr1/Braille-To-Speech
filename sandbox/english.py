@@ -39,18 +39,23 @@ z = Letter(np.array([[1,0],[0,1],[1,1]]),"z")
 listOfLetters = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 
 
-def getChar(char): #essentially a dictionary
-    asciiRep = ord(char)
-    return listOfLetters[asciiRep-97]
+class Translator:
+    def __init__(self):
+        pass
 
-def findChar(matrix): #this function matches a matrix representation to a specific letter
-    #may need to rework code here so that it agrees with a numpy array
-    for letter in listOfLetters:
-        match = True
-        for i in range(0,3):
-            for x in range(0,2):
-                if(not letter.matrixRep[i][x] == matrix[i][x]):
-                    match = False
+    def getChar(self,char): #essentially a dictionary
+        asciiRep = ord(char)
+        return listOfLetters[asciiRep-97]
+
+    def findChar(self,matrix): #this function matches a matrix representation to a specific letter
+        for letter in listOfLetters:
+            match = True
+            for i in range(0,3):
+                for x in range(0,2):
+                    if(not letter.matrixRep[i][x] == matrix[i][x]):
+                        match = False
         
-        if match:
-            return letter
+            if match:
+                return letter
+
+
