@@ -2,6 +2,7 @@
 
 ## Requirements
 - Install the following packages using pip3 install: gTTS
+- Install the following packages using apt install: imageMagick
 
 ## Contribution Practices
 - Before making any changes, create a branch off main
