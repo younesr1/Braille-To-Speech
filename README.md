@@ -1,4 +1,4 @@
-# HTN
+# Braille To Speech
 
 ## Requirements
 - Install the following packages using pip3 install: gTTS
